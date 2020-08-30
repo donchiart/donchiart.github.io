@@ -166,7 +166,9 @@ ul.comicNav a:hover, ul.comicNav a:focus {
     display: block;
     margin: auto;
     width: 300px;
-    font-size: 15px;
+    font-size: 20px;
+    color: #29264E; 
+    font-weight: 25;
 }
 #footnote {
     clear: both;
