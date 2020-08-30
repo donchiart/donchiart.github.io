@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--Theme Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,800" rel="stylesheet">
+
+<!--Font Awesome css-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="assets/style.css" title="Default"/>
+<title>DonChi Comics</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="icon" href="assets/icon.png" type="image/gif" sizes="16x16">
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/atom.xml"/>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.xml"/>
+<script type="text/javascript" src="assets/main.js" async></script>
+<script type="text/javascript" src="assets/main2.js" async></script>
+<script src="assets/phtots.js"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+
+imgArray = new Array(
+"1.png",
+"2.png",
+"3.png",
+"4.png"
+);
+
+baseURL = "https://raw.githubusercontent.com/donchiart/donchiart.github.io/master/comics/";
+numImages = 4;
+curImage = 1;
+
+function f_slideshow( xflip ) {
+curImage = curImage + xflip;
+if (curImage > numImages)
+{ curImage = 1 ; }
+if (curImage == 0)
+{ curImage = numImages ; }
+document.images[2].src = baseURL + imgArray[curImage - 1];
+}
+</script>
+
+
+</head>
+
+<body>
+<div id="topContainer">
+<div id="topLeft">
+<ul>
+<li><a href="/archive">Archive</a></li>
+<li><a rel="author" href="/about">About</a></li>
+<li><a href="https://www.instagram.com/donchiart/" target="_blank"><i class="fi-xnsuxl-instagram"></i>Instagram</a>
+
+</br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br>
+<span><a href="/"><img src="assets/icon.png" height="150" width="150"/></a></span>
+</ul>
+
+</div>
+
+<div id="topRight">
+<div id="masthead">
+<span><a href="/"><img src="assets/logo.png" height="234" width="298"/></a></span>
+<span id="slogan">Two everyday characters talking about Life, food, and research.</br> Say woof woof and hello to the world of Don, the dog and Chi, the PhD student. Will try and update the comics biweekly.</span>
+
+
+
+</div>
+
+</div>
+<div id="bgLeft" class="bg box"></div>
+<div id="bgRight" class="bg box"></div>
+</div>
+
+<div id="middleContainer" class="box">
+<div id="comic">
+</div>
+<ul class="comicNav">
+
+<img src='https://raw.githubusercontent.com/donchiart/donchiart.github.io/master/comics/1.png'>
+</br>
+<li><input type="button" value="<< Previous" name="cb_prev" onclick="f_slideshow(-1)"></li>
+<li><input type="button" value="Next >>" name="cb_next" onclick="f_slideshow(1)"></li>
+
+</ul>
+<br />
+</div>
+
+<div id="bottom" class="box">
+<div id="comicLinks">
+Comics I enjoy:<br/>
+        <a href="http://threewordphrase.com/">Three Word Phrase</a>,
+        <a href="http://www.smbc-comics.com/">SMBC</a>,
+        <a href="http://www.qwantz.com">Dinosaur Comics</a>,
+        <a href="http://oglaf.com/">Oglaf</a> (nsfw),
+        <a href="http://www.asofterworld.com">A Softer World</a>,
+        <a href="http://buttersafe.com/">Buttersafe</a>,
+        <a href="http://pbfcomics.com/">Perry Bible Fellowship</a>,
+        <a href="http://questionablecontent.net/">Questionable Content</a>,
+        <a href="http://www.buttercupfestival.com/">Buttercup Festival</a>,
+        <a href="http://www.mspaintadventures.com/?s=6&p=001901">Homestuck</a>,
+	<a href="http://www.jspowerhour.com/">Junior Scientist Power Hour</a>
+</div>
+<br />
+<br />
+<div id="licenseText">
+<p>
+This work is licensed under a
+<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 License</a>.
+</p><p>
+This means you're free to copy and share these comics (but not to sell them). <a rel="license" href="/license.html">More details</a>.</p>
+</div>
+</div>
+</body>
+</html>
+
