@@ -1,4 +1,6 @@
-var arr = new collection(["/home/chase/donchiart/comics/1.png","/home/chase/donchiart/comics.2.png","/home/chase/donchiart/comics/3.png","/home/chase/donchiart/comics/4.png"]);
+
+/*
+var arr = new collection(["https://github.com/donchiart/donchiart.github.io/blob/master/comics/1.png","https://github.com/donchiart/donchiart.github.io/blob/master/comics/2.png","https://github.com/donchiart/donchiart.github.io/blob/master/comics/3.png","https://github.com/donchiart/donchiart.github.io/blob/master/comics/4.png"]);
 function collection(imgs) {
   this.imgs = imgs;
   this.i = 0;
@@ -29,4 +31,24 @@ function collection(imgs) {
 }
 
 
+*/
 
+imgArray = new Array(
+"1.png",
+"2.png",
+"3.png",
+"4.png"
+);
+
+baseURL = "https://raw.githubusercontent.com/donchiart/donchiart.github.io/master/comics/";
+numImages = 4;
+curImage = 1;
+
+function f_slideshow( xflip ) {
+curImage = curImage + xflip;
+if (curImage > numImages)
+{ curImage = 1 ; }
+if (curImage == 0)
+{ curImage = numImages ; }
+document.images[2].src = baseURL + imgArray[curImage - 1];
+}
