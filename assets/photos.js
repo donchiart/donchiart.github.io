@@ -37,11 +37,13 @@ imgArray = new Array(
 "1.png",
 "2.png",
 "3.png",
-"4.png"
+"4.png",
+"5.png",
+"6.png"  
 );
 
 baseURL = "https://raw.githubusercontent.com/donchiart/donchiart.github.io/master/comics/";
-numImages = 4;
+numImages = 6;
 curImage = 1;
 
 function f_slideshow( xflip ) {
